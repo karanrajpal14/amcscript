@@ -20,5 +20,5 @@ music=y
 subtitles=en
 seriesFormat=/media/My Passport/TV/{n.replaceTrailingBrackets().sortName().upperInitial().space(' ')} ({y}){'/Season '+S}/{n.sortName().upperInitial().replaceTrailingBrackets().space(' ')} - {S00E00} - {t.replaceAll(/[!?.]+$/).replaceAll(/[`´‘’ʻ]/, "'") .lowerTrail().replacePart(', Part $1')}
 movieFormat=/media/My Passport/Movies/{n.sortName().upperInitial().space(' ')} ({y}) [IMDB = {imdb.rating} {vf}]/{n.sortName().upperInitial().space(' ')} ({y}) [IMDB = {imdb.rating} {vf}]{' CD'+pi}{if (ext == 'nfo' && folder.list().find{it =~ /(?i:CD\d+)/}) '.CD1'}
-musicFormat=/media/D/Music/{n}/{n} - {album} - {t}
+musicFormat=/media/D/Music/{n}/{t} - {album}
 animeFormat=/media/My Passport/TV/Anime/{primaryTitle}/{primaryTitle} - {sxe} - {t.replaceAll(/[!?.]+$/).replaceAll(/[`´‘’ʻ]/, /'/).replacePart(', Part $1')}
